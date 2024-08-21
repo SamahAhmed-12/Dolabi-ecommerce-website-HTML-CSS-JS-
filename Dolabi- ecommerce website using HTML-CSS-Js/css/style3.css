@@ -1,0 +1,8 @@
+.heart-icon {
+    font-size: 24px; /* Adjust size */
+    color: #f00; /* Adjust color */
+    margin: 10px;
+}
+.heart-icon:hover {
+    color: #ff4081; /* Change color on hover */
+}

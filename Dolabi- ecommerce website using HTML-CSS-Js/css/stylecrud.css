@@ -1,0 +1,94 @@
+*{
+     margin: 0;
+     padding: 0;  
+}
+body{
+    background: +#c9cbcb;
+    color: #000000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.crud{
+    width: 85%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+input{
+      width: 100%;
+      height: 30px;
+      outline: none;
+      border: none;
+      background-color: rgb(207, 213, 214);
+      margin: 5px 0;
+      border-radius: 5px;
+      padding: 5px;
+      color: #fff;
+
+}
+input:focus{
+   background: #050505; 
+   transform: scale(1.1);
+}
+.price input{
+    width: 25%;
+}
+#total{
+    background: #1facb4;
+    padding: 5px 5px;
+    border-radius: 4px;
+}
+/*اللي بتظهر زر total */
+#total::before{  
+    content:'total : ' ;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+#imageList img {
+    max-width: 150px;
+    margin: 10px;
+}
+button{
+    width: 100%;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    background: #1facb4;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+button:hover{
+    background: #51c5d6;
+    /*تباعد بين الحروف*/
+    letter-spacing: 2px;
+}
+.btnsearch{
+    display: flex;
+    justify-content: space-between;
+}
+.btnsearch button{
+    width: 25%;
+}
+#DeleteAll{
+    margin: 20px 0;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+table{
+    text-transform: uppercase;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+   padding: 5px; 
+}

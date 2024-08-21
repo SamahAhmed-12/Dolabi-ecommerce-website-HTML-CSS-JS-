@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+                   initial-scale=1.0">
+    <title>Feedback Form with map</title>
+    <link rel="stylesheet" href="./our project ecommerce-website-master/css/contactUs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/contactUs.css"/>
+</head>
+
+<body>
+    <div class="ffbox">
+        <div class="ffbox1">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="fullName">
+                    <i class="fa fa-solid fa-user" style="margin: 2px;">
+                    </i> Full Name:
+                </label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">
+                    <i class="fa fa-solid fa-envelope" style="margin: 2px;">
+                    </i>
+                    Email Address:
+
+                </label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mobile">
+                    <i class=" fa fa-solid fa-phone" style="margin: 2px;">
+                    </i>
+                    Contact No:
+                </label>
+                <input type="tel" id="mobile" name="mobile" required>
+
+                <label for="msg">
+                    <i class=" fa fa-solid fa-comment" style="margin: 2px;">
+                    </i>
+                    Write Message:
+                </label>
+                <textarea id="msg" name="msg" rows="5" required>
+                </textarea>
+
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+        <div class="map-div">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d14074.443509980301!2d30.732075000000002!3d28.127886!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDA3JzQwLjQiTiAzMMKwNDMnNTUuNSJF!5e0!3m2!1sen!2sus!4v1723855252716!5m2!1sen!2sus"
+                width="370" height="95%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</body>
+<script src="js\contactUs.js"></script>
+</html>

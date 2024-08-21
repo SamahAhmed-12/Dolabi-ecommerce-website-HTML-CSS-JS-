@@ -1,0 +1,247 @@
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+#cart-icon{
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+/* CART  */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -360px; /* Start hidden off-screen to the right */
+    width: 360px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: var(--white); /* Ensure the background is opaque */
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.5); /* Solid shadow effect */
+    border: 1px solid var(--main-color); /* Solid border */
+    transition: right 0.3s ease; /* Smooth transition for moving the cart */
+    z-index: 1000; /* Ensure the cart is on top of other content */
+}
+.cart.active{
+    right: 0;
+    transition: .5s;
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+.detail-box{
+    display: grid;
+    row-gap: .5rem;
+}
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size: 24px;
+    color: var(--main-color);
+    cursor: pointer;
+}
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: .5rem;
+}
+.btn-buy {
+    position: static; /* Position relative to the container */
+    bottom: 20px; /* Distance from the bottom of the container */
+    right: -40px; /* Distance from the right side of the container */
+    padding: 8px 24px;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff; /* White text color */
+    background-color: #70cfc3; /* Background color */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+.btn-buy:hover{
+    background-color: var(--text-color);
+}
+.btn-buy:active {
+    background-color: #2d28c6; /* Even darker red when button is pressed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Slightly smaller shadow when pressed */
+}
+#cart-close{
+    position: absolute;
+    top: 1rem;
+    right: .8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+.add-cart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px;
+    cursor: pointer;
+}
+.add-cart:hover{
+    background-color: hsl(249, 32%, 17%);
+}
+
+#clear-cart {
+    position: static; 
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right side of the viewport */
+    padding: 8px 24px; /* Adjust padding for size */
+    font-size: 10px; /* Font size  */
+    font-family: Arial, sans-serif; /* Font family */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center-align text */
+    text-decoration: none; /* Remove underline from text */
+    color: #fff; /* White text color */
+    background-color: #e70000; 
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    cursor: pointer; /* Pointer cursor on hover */
+    z-index: 1000; /* Ensure the button is above other content */
+}
+
+#clear-cart:hover {
+    background-color: #ef5350; /* Darker red on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+#clear-cart:active {
+    background-color: #c62828; /* Even darker red when button is pressed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Slightly smaller shadow when pressed */
+}
+/* General button styles */
+.remove-item {
+    background-color: #e70000; /* Red background for the remove button */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 8px 24px; /* Add some padding */
+    font-size: 10px; /* Adjust font size */
+    font-weight: bold; /* Bold text for emphasis */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect */
+.remove-item:hover {
+    background-color: #e60000; /* Darker red on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Focus effect */
+.remove-item:focus {
+    outline: 2px solid #ff4d4d; /* Outline color matches the button */
+    outline-offset: 2px; /* Offset the outline slightly */
+}
+
+/* Active effect */
+.remove-item:active {
+    background-color: #b30000; /* Even darker red when button is clicked */
+    transform: scale(0.98); /* Slightly shrink button on click */
+}
+
+
+
+/* Style for the quantity buttons and the remove button */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.cart-item span {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item .quantity-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.cart-item .quantity-button:hover {
+    background-color: #e0e0e0;
+}
+
+.cart-item .quantity-button:active {
+    background-color: #d0d0d0;
+}
+
+.cart-item .remove-item {
+    background-color: #ff4d4d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s;
+}
+
+.cart-item .remove-item:hover {
+    background-color: #e04343;
+}
+
+.cart-item .remove-item:active {
+    background-color: #c03939;
+}

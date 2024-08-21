@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/aboutus.css"/>
+    <link rel="stylesheet" href="css/style2.css"/>
+    <title>Boy’s T-Shirt - Codevo</title>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <div class="top-nav">
+      <div class="container d-flex">
+        <p>Order Online Or Call Us: (001) 2222-55555</p>
+        <ul class="d-flex">
+          <li><a href="about us.html">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="contactUs.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="nav-center container d-flex">
+        <a href="index.html" class="logo"><h1>Dolabi</h1></a>
+
+        <ul class="nav-list d-flex">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="product.html" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="about us.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contactUs.html" class="nav-link">Contact</a>
+          </li>
+          <li class="icons d-flex">
+            <a href="login.html" class="icon">
+              <i class="bx bx-user"></i>
+            </a>
+        </ul>
+
+        <div class="icons d-flex">
+          <a href="login.html" class="icon">
+            <i class="bx bx-user"></i>
+          </a>
+          <!--<div class="icon">
+            <i class="bx bx-search"></i>
+          </div>-->
+          <div class="icon">
+            <i class="bx bx-heart"></i>
+  
+          </div>
+          <a  class="icon">
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+            
+          </a>
+        </div>
+
+        <div class="hamburger">
+          <i class="bx bx-menu-alt-left"></i>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Product Details -->
+    <div class="responsive-container-block bigContainer">
+      <div class="responsive-container-block Container">
+        <p class="text-blk heading">
+          About Us
+        </p>
+        <p class="text-blk subHeading">
+          Dolabi always aims that all women should feel their best selves through our outstanding products. we are looking forward to satisfy our customer's evolving needs, reaching across the region, continuously delivering highest quality products with good value & high-level customer care.
+        </p>
+      </div>
+    </div>    
+
+      <!-- CART  -->
+      <div class="nav container">
+        <!--<i class='bx bx-shopping-bag' id="cart-icon"></i>-->
+  
+        <!-- CART  -->
+        <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+  
+            <!-- CONTENT  -->
+            <div class="cart-content">
+  
+  
+            </div>
+  
+            <!-- TOTAL   -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+            </div>
+            <!-- BUY BUTTON  -->
+            <button id="btn-buy"  class="btn-buy">Check Out</button>
+            <button id="clear-cart">Clear Cart</button>
+            <!-- CART CLOSE  -->
+            <i class='bx bx-x' id="cart-close"></i>
+        </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col d-flex">
+          <h4>INFORMATION</h4>
+          <a href="about us.html">About us</a>
+          <a href="contactUs.html">Contact Us</a>
+        </div>
+        <div class="col d-flex">
+          <h4>USEFUL LINK</h4>
+          <a href="product.html">Online Store</a>
+          <a href="contactUs.html">Customer Services</a>
+          <a href="index.html">Top Brands</a>
+        </div>
+        <div class="col d-flex">
+          <span><i class="bx bxl-facebook-square"></i></span>
+          <span><i class="bx bxl-instagram-alt"></i></span>
+          <span><i class="bx bxl-github"></i></span>
+          <span><i class="bx bxl-twitter"></i></span>
+          <span><i class="bx bxl-pinterest"></i></span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="./js/index.js"></script>
+    <script src="./js/cart.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/zoomsl.min.js"></script>
+    <script>
+      $(function () {
+        console.log("hello");
+        $("#zoom").imagezoomsl({
+          zoomrange: [4, 4],
+        });
+      });
+    </script>
+  </body>
+</html>

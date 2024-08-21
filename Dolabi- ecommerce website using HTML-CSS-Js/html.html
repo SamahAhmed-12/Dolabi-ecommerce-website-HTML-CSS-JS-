@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/stylecrud.css">
+  
+</head>
+<body>
+    
+    <div class="crud">
+    <div class="head">
+          <h2>DOLABI</h2>
+          <p>PRODUT MANANGMENT SYSTEM</p>
+    </div>
+    <button id="adminLogoutBtn">Logout</button>
+
+    <div class="inputs">
+           <input placeholder="title" type="text" id="title">
+          
+    </div>
+     
+    <div class="price">
+       <input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+       <input onkeyup=" getTotal()" type="number" id="discount" placeholder="discount">
+       <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+       <small id="total"></small>
+     </div>
+    
+     <input type="file" id="imageUpload" accept="image/*">
+     <input placeholder="count" type="number" id="count">
+     <input placeholder="description" type="text" id="description">
+     <input placeholder="category" type="text" id="category">
+     <button id="submit">create</button>
+     <div class="outputs">
+        <div class="searchBlock">
+           <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="search"> 
+           <div class="btnsearch">
+            <button onclick="getsearchMood(this.id)" id="searchTitle">search by title</title></button>
+            <button onclick="getsearchMood(this.id)" id="searchcategory">search by category</title></button>
+
+           </div>
+        </div> 
+     </div>
+</div>
+                    <div id="DeleteAll">
+
+                    </div>
+
+
+<table>
+    <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>price</th>
+        <th>taxes</th>
+        <th>discount</th>
+        <th>image</th>
+        <th>description</th>
+        <th>category</th>
+        <th>total</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    <tbody id="tbody" >
+        
+       
+    </tbody>
+</table>
+<script src="js/main.js"></script>
+<script src="login.html"></script>
+<script src="js/admin-logout.js"></script>
+</body>
+</html>

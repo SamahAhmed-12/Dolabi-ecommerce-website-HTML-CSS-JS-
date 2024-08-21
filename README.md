@@ -1,4 +1,4 @@
-# e-commerce-website
+# responsive-e-commerce-website #HTML-CSS-JS
 Dolabi store is a responsive and working e-commerce website for clothes store
 website developed by team members:
 marina maher (user: MarinaMaher1) - Samah ahmed (user SamahAhmed-12) - fady Ehab (FafyEhab99) - Mostafa Ahmed (IRohayem)

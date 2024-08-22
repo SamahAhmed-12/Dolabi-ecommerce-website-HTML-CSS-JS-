@@ -193,9 +193,24 @@
         <h1>NEW ARRIVALS</h1>
         <p>Our new collection</p>
     </div>
-    <section class="pagination" id="products-container">
+        <section class="section all-products" id="products">
+      <div class="top container">
+        <form>
+          <select id="categoryFilter">
+            <option value="all">All Products</option>
+            <option value="men clothes">Men's Clothes</option>
+            <option value="women clothes">Women's Clothes</option>
+            <option value="accessories">Accessories</option>
+          </select>
+          <span><i class="bx bx-chevron-down"></i></span>
+        </form>
+      </div>
+      <div class="product-center container">
+        <!-- Product items will be injected here dynamically -->
+      </div>
+    </section>
+    <section class="pagination">
       <div class="container">
-        <span>1</span> <span>2</span> <span>3</span> <span>4</span>
         <span><i class="bx bx-right-arrow-alt"></i></span>
       </div>
     </section>

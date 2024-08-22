@@ -151,7 +151,7 @@ function displayProducts() {
         return;
     }
 
-    const container = document.getElementById('products-container');
+    const container = document.querySelector('.product-center');
     container.innerHTML = '';
 
     dataPro.forEach(product => {
@@ -226,6 +226,8 @@ window.addEventListener('load', () => {
     }
 });
 
+
+
 // Function to display products based on selected category
 function displayCategory() {
     const dataPro = JSON.parse(localStorage.getItem('product'));
@@ -261,10 +263,9 @@ function displayCategory() {
         }
     });
 }
+
 // Event listener for category filter change
 document.getElementById('categoryFilter').addEventListener('change', displayCategory);
 
 // Initial call to display all products
 window.addEventListener('load', displayProducts);
-
-

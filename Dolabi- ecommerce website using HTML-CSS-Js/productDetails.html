@@ -1,213 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Box icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
     <!-- Custom StyleSheet -->
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/style2.css"/>
     <link rel="stylesheet" href="./css/rating.css"/>
-    <title>product details</title>
-  </head>
+    <title>Product Details</title>
+</head>
 
-  <body>
+<body>
     <!-- Navigation -->
     <div class="top-nav">
-      <div class="container d-flex">
-        <p>Order Online Or Call Us: (001) 2222-55555</p>
-        <ul class="d-flex">
-          <li><a href="about us.html">About Us</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="contactUs.html">Contact</a></li>
-        </ul>
-      </div>
+        <div class="container d-flex">
+            <p>Order Online Or Call Us: (001) 2222-55555</p>
+            <ul class="d-flex">
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="contactUs.html">Contact</a></li>
+            </ul>
+        </div>
     </div>
     <div class="navigation">
-      <div class="nav-center container d-flex">
-        <a href="index.html" class="logo"><h1>Dolabi</h1></a>
-
-        <ul class="nav-list d-flex">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="product.html" class="nav-link">Shop</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="about us.html" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="contactUs.html" class="nav-link">Contact</a>
-          </li>
-          <li class="icons d-flex">
-            <a href="login.html" class="icon">
-              <i class="bx bx-user"></i>
-            </a>>
-        </ul>
-
-        <div class="icons d-flex">
-          <a href="login.html" class="icon">
-            <i class="bx bx-user"></i>
-          </a>
-        
-          <div class="icon">
-            <i class='bx bx-heart' id="heart-icon"></i>
-            
-          </div>
-          <a  class="icon">
-            <i class='bx bx-shopping-bag' id="cart-icon"></i>
-          
-          </a>
-        </div>
-
-        <div class="hamburger">
-          <i class="bx bx-menu-alt-left"></i>
-        </div>
-      </div>
-    </div>
-      <!-- shopping cart-->
-      <div class="nav container">
-        <!--<i class='bx bx-shopping-bag' id="cart-icon"></i>-->
-  
-        <!-- CART  -->
-        <div class="cart">
-            <h2 class="cart-title">Your Cart</h2>
-  
-            <!-- CONTENT  -->
-            <div class="cart-content">
-  
-  
+        <div class="nav-center container d-flex">
+            <a href="index.html" class="logo"><h1>Dolabi</h1></a>
+            <ul class="nav-list d-flex">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="product.html" class="nav-link">Shop</a></li>
+                <li class="nav-item"><a href="about us.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contactUs.html" class="nav-link">Contact</a></li>
+                <li class="icons d-flex">
+                    <a href="login.html" class="icon"><i class="bx bx-user"></i></a>
+                </li>
+            </ul>
+            <div class="icons d-flex">
+                <a href="login.html" class="icon"><i class="bx bx-user"></i></a>
+                <div class="icon"><i class='bx bx-heart' id="heart-icon"></i></div>
+                <a class="icon"><i class='bx bx-shopping-bag' id="cart-icon"></i></a>
             </div>
-  
-            <!-- TOTAL   -->
-            <div class="total">
-                <div class="total-title">Total</div>
-                <div class="total-price">$0</div>
-            </div>
-            <!-- BUY BUTTON  -->
-            <button id="btn-buy"  class="btn-buy">Check Out</button>
-            <button id="clear-cart">Clear Cart</button>
-            <!-- CART CLOSE  -->
-            <i class='bx bx-x' id="cart-close"></i>
+            <div class="hamburger"><i class="bx bx-menu-alt-left"></i></div>
         </div>
     </div>
+
     <!-- Product Details -->
-<section class="section product-detail">
-  <div class="details container">
-      <div class="left image-container">
-          <div class="main">
-              <img src="" id="zoom" alt="" />
-          </div>
-      </div>
-      <div class="right">
-          <span>Home/Category</span>
-          <h1>Product Title</h1>
-          <div class="price">$0.00</div>
-          <form>
-            <div>
-                  <select>
-                      <option value="Select Size" selected disabled>Select Size</option>
-                      <option value="1">32</option>
-                      <option value="2">42</option>
-                      <option value="3">52</option>
-                      <option value="4">62</option>
-                  </select>
-                  <span><i class="bx bx-chevron-down"></i></span>
-              </div>
-          </form>
-          <form class="form">
-              <input type="text" placeholder="1" />
-              <a href="cart.html" class="addCart">Add To Cart</a>
-          </form>
-          <h3>Product Detail</h3>
-          <p>
-              Product Description
-          </p>
-          <fieldset class="rating">
-            <input type="radio" id="star5" name="rating" value="5"/><label for="star5" class="full" title="Awesome"></label>
-            <input type="radio" id="star4.5" name="rating" value="4.5"/><label for="star4.5" class="half"></label>
-            <input type="radio" id="star4" name="rating" value="4"/><label for="star4" class="full"></label>
-            <input type="radio" id="star3.5" name="rating" value="3.5"/><label for="star3.5" class="half"></label>
-            <input type="radio" id="star3" name="rating" value="3"/><label for="star3" class="full"></label>
-            <input type="radio" id="star2.5" name="rating" value="2.5"/><label for="star2.5" class="half"></label>
-            <input type="radio" id="star2" name="rating" value="2"/><label for="star2" class="full"></label>
-            <input type="radio" id="star1.5" name="rating" value="1.5"/><label for="star1.5" class="half"></label>
-            <input type="radio" id="star1" name="rating" value="1"/><label for="star1" class="full"></label>
-            <input type="radio" id="star0.5" name="rating" value="0.5"/><label for="star0.5" class="half"></label>
-          </fieldset>
-
-      </div>
-  </div>
-</section>
-
-    <!-- Related -->
-    <section class="section all-products" id="products">
-      <div class="top container">
-        <h1>All Products</h1>
-        <form>
-          <select id="categoryFilter">
-            <option value="all">All Products</option>
-            <option value="men clothes">Men's Clothes</option>
-            <option value="women clothes">Women's Clothes</option>
-            <option value="accessories">Accessories</option>
-        </select>
-          <span><i class="bx bx-chevron-down"></i></span>
-        </form>
-      </div>
-      
-      <section class="pagination" id="products-container">
-        <div class="container">
-          <span><i class="bx bx-right-arrow-alt"></i></span>
+    <section class="section product-detail">
+        <div class="details container">
+            <div class="left image-container">
+                <div class="main">
+                    <img src="" id="product-image" alt="Product Image" />
+                </div>
+            </div>
+            <div class="right">
+                <span id="product-category">Home/Category</span>
+                <h1 id="product-title">Product Title</h1>
+                <div class="price" id="product-price">$0.00</div>
+                <form>
+                    <div>
+                        <select id="product-size">
+                            <option value="Select Size" selected disabled>Select Size</option>
+                            <option value="1">32</option>
+                            <option value="2">42</option>
+                            <option value="3">52</option>
+                            <option value="4">62</option>
+                        </select>
+                        <span><i class="bx bx-chevron-down"></i></span>
+                    </div>
+                </form>
+                <form class="form">
+                    <input type="number" placeholder="1" id="product-quantity" />
+                    <a href="cart.html" class="addCart">Add To Cart</a>
+                </form>
+                <h3>Product Detail</h3>
+                <p id="product-description">Product Description</p>
+                <fieldset class="rating">
+                    <input type="radio" id="star5" name="rating" value="5"/><label for="star5" class="full" title="Awesome"></label>
+                    <input type="radio" id="star4.5" name="rating" value="4.5"/><label for="star4.5" class="half"></label>
+                    <input type="radio" id="star4" name="rating" value="4"/><label for="star4" class="full"></label>
+                    <input type="radio" id="star3.5" name="rating" value="3.5"/><label for="star3.5" class="half"></label>
+                    <input type="radio" id="star3" name="rating" value="3"/><label for="star3" class="full"></label>
+                    <input type="radio" id="star2.5" name="rating" value="2.5"/><label for="star2.5" class="half"></label>
+                    <input type="radio" id="star2" name="rating" value="2"/><label for="star2" class="full"></label>
+                    <input type="radio" id="star1.5" name="rating" value="1.5"/><label for="star1.5" class="half"></label>
+                    <input type="radio" id="star1" name="rating" value="1"/><label for="star1" class="full"></label>
+                    <input type="radio" id="star0.5" name="rating" value="0.5"/><label for="star0.5" class="half"></label>
+                </fieldset>
+            </div>
         </div>
-      </section>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
-      <div class="row">
-        <div class="col d-flex">
-          <h4>INFORMATION</h4>
-          <a href="about us.html">About us</a>
-          <a href="contactUs.html">Contact Us</a>
+        <div class="row">
+            <div class="col d-flex">
+                <h4>INFORMATION</h4>
+                <a href="about us.html">About us</a>
+                <a href="contactUs.html">Contact Us</a>
+            </div>
+            <div class="col d-flex">
+                <h4>USEFUL LINK</h4>
+                <a href="">Online Store</a>
+                <a href="contactUs.html">Customer Services</a>
+                <a href="index.html">Top Brands</a>
+            </div>
+            <div class="col d-flex">
+                <span><i class="bx bxl-facebook-square"></i></span>
+                <span><i class="bx bxl-instagram-alt"></i></span>
+                <span><i class="bx bxl-github"></i></span>
+                <span><i class="bx bxl-twitter"></i></span>
+                <span><i class="bx bxl-pinterest"></i></span>
+            </div>
         </div>
-        <div class="col d-flex">
-          <h4>USEFUL LINK</h4>
-          <a href="">Online Store</a>
-          <a href="contactUs.html">Customer Services</a>
-          <a href="index.html">Top Brands</a>
-        </div>
-        <div class="col d-flex">
-          <span><i class="bx bxl-facebook-square"></i></span>
-          <span><i class="bx bxl-instagram-alt"></i></span>
-          <span><i class="bx bxl-github"></i></span>
-          <span><i class="bx bxl-twitter"></i></span>
-          <span><i class="bx bxl-pinterest"></i></span>
-        </div>
-      </div>
     </footer>
+
     <!-- Custom Script -->
     <script src="./js/index.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.0.min.js"
-      integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/zoomsl.min.js"></script>
-    <script>
-      $(function () {
-        console.log("hello");
-        $("#zoom").imagezoomsl({
-          zoomrange: [4, 4],
-        });
-      });
-    </script>
-    <script src="js/cart.js"></script>
-    <script src="js/login.js"></script>
-    <script src="js/products.js"></script>
-    <script src="js/rating.js"></script>
-  </body>
+    <script src="./js/productDetails.js"></script>
+</body>
 </html>

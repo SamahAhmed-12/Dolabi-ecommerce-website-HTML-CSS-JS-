@@ -120,7 +120,7 @@ document.getElementById('login-form').addEventListener('submit', function(e) {
 document.getElementById('loginEmail').addEventListener('blur', checkLoginEmail);
 document.getElementById('loginPassword').addEventListener('blur', checkLoginPassword);
 
-// This function was mentioned but not used in your code; if needed, you can integrate it
+// function to set user id (ended up not used)
 function handleLoginSuccess(userId) {
     localStorage.setItem('userId', userId);
 }

@@ -261,7 +261,6 @@ function displayCategory() {
         }
     });
 }
-
 // Event listener for category filter change
 document.getElementById('categoryFilter').addEventListener('change', displayCategory);
 
